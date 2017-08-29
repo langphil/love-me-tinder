@@ -1,24 +1,24 @@
-# README
+# Love me Tinder
+A dating / relationship compatibility game / simulator.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+* git clone git@github.com:langphil/love-me-tinder.git
+* bundle install
+* bin/rails db:create
+* bin/rails db:migrate
+* rails s
+* http://localhost/3000
 
-Things you may want to cover:
+## Other
+* rspec (runs tests)
+* rubocop (code quality)
 
-* Ruby version
+## Screenshots
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Creators
+* [Cong Cong Bo](https://github.com/congcongbo)
+* [Mutsa Munyawiri](https://github.com/memunyawiri)
+* [Costas Kiteou](https://github.com/ckiteou)
+* [Petra Chocholova](https://github.com/petrakh)
+* [Phil Lang](https://github.com/langphil)
