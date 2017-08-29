@@ -18,6 +18,7 @@ A dating / relationship compatibility game / simulator.
 
 ## Creators
 * [Cong Cong Bo](https://github.com/congcongbo)
+* [Eoin OSullivan](https://github.com/EOSullivanBerlin)
 * [Mutsa Munyawiri](https://github.com/memunyawiri)
 * [Costas Kiteou](https://github.com/ckiteou)
 * [Petra Chocholova](https://github.com/petrakh)
