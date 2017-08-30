@@ -3,7 +3,4 @@ class GameController < ApplicationController
     @game = Game.new
   end
 
-  def gift
-    @game.gift
-  end
 end

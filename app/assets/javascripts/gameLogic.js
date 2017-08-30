@@ -48,3 +48,7 @@ Game.prototype.lose = function () {
     return false
   }
 }
+
+Game.prototype.random = function () {
+  
+}
