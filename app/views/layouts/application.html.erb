@@ -6,14 +6,41 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <script type="text/javascript" src="./app/assets/javascript/swipecards.js"></script> -->
   </head>
 
   <body>
       <div class="d-flex justify-content-center swipe-container">
-        <div class="swipe-box">
+        <div class="swipe-box" id="swipe">
           <img class="img-fluid" src="http://1.bp.blogspot.com/-GmFI9grut4Q/UF6Un_nTaBI/AAAAAAAAQ_k/QP_Pyf6apRc/s1600/Gentoo+Penguin5.jpg" alt="Penguins">
         </div>
+        <h2 id="event">event</h2>
       </div>
+      <script type="text/javascript">
+      var options = {
+        dragLockToAxis: true,
+        dragBlockHorizontal: true
+      };
+      var swipe = document.getElementById("swipe");
+      var hammertime = new Hammer("swipe", options);
+      hammertime.on("swipe", function(ev){ });
+      // hammertime.on('swipe', function() {
+      //   swipe.textContent = ev.type +
+      //   $(this).find(".swipe-box").animate({left: "-=100"}, 500);
+      //   $("#event").text("drag left");
+      // });
+      // $(function(){
+      //   var blue = document.getElementById("swipe");
+      //
+      //   Hammer("swipe").on("swipeleft", function() {
+      //       $(this).find(".swipe-box").animate({left: "-=100"}, 500);
+      //       $("#event").text("drag left");
+      //   });
+      // });
+      </script>
+
     <%= yield %>
+    <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer-time.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
