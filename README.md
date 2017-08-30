@@ -15,31 +15,29 @@ A dating / relationship compatibility game / simulator.
 
 ## Screenshots
 
-### LoveMeTinder Mockups
+## LoveMeTinder Mockups
 
-##### Create your profile
+#### Create your profile
 
-![PNG](http://i.imgur.com/53Uo3as.png =250x150 "Step 1")
-
-![PNG](http://i.imgur.com/QTSTlxh.png "Step 2")
+<p float="left">
+<img src="http://i.imgur.com/53Uo3as.png" width="150"/>
+<img src="http://i.imgur.com/QTSTlxh.png" width="157"/>
+</p>
 
 ### Find a match
 
-![PNG](http://i.imgur.com/obxHHXf.png "Step 3")
+<p float="left">
+<img src="http://i.imgur.com/obxHHXf.png" width="150"/>
+<img src="http://i.imgur.com/VnCODuy.png" width="150"/>
+<img src="http://i.imgur.com/5z9UoJ4.png" width="198"/>
+<img src="http://i.imgur.com/87yPepM.png" width="144"/>
+<img src="http://i.imgur.com/leOdYXN.png" width="155"/>
+<img src="http://i.imgur.com/LRIGCGd.png" width="155"/>
+</p>
 
-![PNG](http://i.imgur.com/VnCODuy.png "Step 4")
-### Chat with a match
-![PNG](http://i.imgur.com/5z9UoJ4.png "Step 5")
-### Start playing
-![PNG](http://i.imgur.com/87yPepM.png "Step 6")
-### Win...
-![PNG](http://i.imgur.com/leOdYXN.png "Game end 1")
-### Or lose!
-![PNG](http://i.imgur.com/LRIGCGd.png "Game end 2")
+## Heroku
 
-
-## Access
-Heroku: https://love-me-tinder.herokuapp.com/
+https://love-me-tinder.herokuapp.com/
 
 
 ## Creators
