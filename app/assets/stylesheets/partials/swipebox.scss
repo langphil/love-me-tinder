@@ -1,5 +1,12 @@
-.swipebox {
-  background-color: black;
-  width: 300px;
-  height: 300px;
+.swipe-container {
+  height: 100vh;
+}
+
+.swipe-box {
+  background-color: #EAEAEA;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
