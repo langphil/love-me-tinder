@@ -1,0 +1,31 @@
+<%= form_for @player, url: {:action => :create} do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+  <div class="radio">
+    Gender:
+    <%= f.radio_button :gender, "female", :checked => true %>
+    <%= label :gender_female, "I'm a girl", :value => "female" %>
+    <%= f.radio_button :gender, "male" %>
+    <%= label :gender_male, "I'm a guy", :value => "male" %>
+    <%= f.radio_button :gender, "other" %>
+    <%= label :gender_other, "I'm just me", :value => "other" %>
+  </div>
+  <div class="radio">
+    I'm interested in:
+    <%= f.radio_button :interest, "male", :checked => true %>
+    <%= label :interest_male, "Male", :value => "male" %>
+    <%= f.radio_button :interest, "female" %>
+    <%= label :interest_female, "Female", :value => "female" %>
+    <%= f.radio_button :interest, "both" %>
+    <%= label :interest_both, "Both", :value => "both" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create player" %>
+  </div>
+<% end %>
