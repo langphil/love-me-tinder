@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe Game, type: :model do
 
-
   it "has a default initial health" do
     game = Game.new
     expect(game.health).to eq(60)
