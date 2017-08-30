@@ -3,44 +3,71 @@
   <head>
     <title>LoveMeTinder</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- <script type="text/javascript" src="./app/assets/javascript/swipecards.js"></script> -->
+    <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
       <div class="d-flex justify-content-center swipe-container">
-        <div class="swipe-box" id="swipe">
-          <img class="img-fluid" src="http://1.bp.blogspot.com/-GmFI9grut4Q/UF6Un_nTaBI/AAAAAAAAQ_k/QP_Pyf6apRc/s1600/Gentoo+Penguin5.jpg" alt="Penguins">
+        <div class="swipe-box">
+          <ol>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1YwVZfthNIauNeOXu_qdYt25eh0Ckd1aiaGdtuAabvYieVo2g" alt="Penguin" class="image" width="325" height="400"></li>
+            <li><img src="https://static.giantbomb.com/uploads/original/0/3683/1120634-penguin_chick.jpg" alt="Penguin" class="image" width="325" height="400"></li>
+            <li><img src="https://www.firstscribe.com/wp-content/uploads/2015/10/nice-penguin-e1446231770203.jpg" alt="Penguin" class="image" width="325" height="400"></li>
+            <li><img src="http://stickers.sa-studio.net/product_images/u/493/MAD032__73442_zoom.png" alt="Penguin" class="image" width="325" height="400"></li>
+            <li><img src="https://n1.sdlcdn.com/imgs/a/d/i/SDL459407298_1369992793_image1-2e3e0.jpg" alt="Penguin" class="image" width="325" height="400"></li>
+          </ol>
         </div>
-        <h2 id="event">event</h2>
       </div>
-      <script type="text/javascript">
-      var options = {
-        dragLockToAxis: true,
-        dragBlockHorizontal: true
-      };
-      var swipe = document.getElementById("swipe");
-      var hammertime = new Hammer("swipe", options);
-      hammertime.on("swipe", function(ev){ });
-      // hammertime.on('swipe', function() {
-      //   swipe.textContent = ev.type +
-      //   $(this).find(".swipe-box").animate({left: "-=100"}, 500);
-      //   $("#event").text("drag left");
-      // });
-      // $(function(){
-      //   var blue = document.getElementById("swipe");
-      //
-      //   Hammer("swipe").on("swipeleft", function() {
-      //       $(this).find(".swipe-box").animate({left: "-=100"}, 500);
-      //       $("#event").text("drag left");
-      //   });
-      // });
-      </script>
+      <%= yield %>
+    <script src="//d3kt63i4n3r3r8.cloudfront.net/assets/examples/hammer-1.1.1-74c3a245b2081b735186d31209e4569f.js"></script>
+  <script>
+    // Initialize the good old webDevBreak namespace
+    var webDevBreak = {};
 
-    <%= yield %>
-    <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer-time.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    webDevBreak.prepareForTouches = function() {
+        function dragElement(event) {
+            var elementToDrag = event.target;
+            // deltaX tracks the distance dragged along the x-axis since the initial touch.
+            elementToDrag.style.left = event.gesture.deltaX + 'px';
+        };
+
+        function deleteElement(event) {
+            var elementToDelete = event.target;
+            // Stop detecting touches on element when it's no longer needed. Can prevent odd behaviour.
+            event.gesture.stopDetect();
+            elementToDelete.style.display = 'none';
+        };
+
+        function resetElement(event) {
+            var elementToReset = event.target;
+            elementToReset.style.left = 0;
+        };
+
+        // Swipe options as recommended by:
+        // https://github.com/EightMedia/hammer.js/wiki/Tips-&-Tricks#horizontal-swipe-and-drag
+        var swipeOptions = { dragLockToAxis: true, dragBlockHorizontal: true };
+        function initTouchListeners(touchableElement) {
+            var touchControl = new Hammer(touchableElement, swipeOptions);
+            touchControl.on("dragright", dragElement)
+                    .on("swiperight", deleteElement)
+                    .on("release", resetElement);
+        };
+
+        var listItems = document.querySelectorAll('li');
+        for (var i = 0; i < listItems.length; i += 1) {
+            initTouchListeners(listItems[i]);
+        }
+      }
+      webDevBreak.prepareForTouchesWhenReady = function() {
+          document.addEventListener("DOMContentLoaded", webDevBreak.prepareForTouches);
+      };
+
+      webDevBreak.prepareForTouchesWhenReady();
+    </script>
+    
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

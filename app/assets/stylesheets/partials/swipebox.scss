@@ -10,3 +10,12 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+ol {
+    list-style-type: none;
+    position: relative;
+}
+
+li {
+    position: absolute;
+}
