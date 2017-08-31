@@ -28,7 +28,7 @@ Game.prototype.date = function () {
 
 Game.prototype.gift = function () {
   var price = sample([4, 7, 12, 16]);
-  var satisfaction = sample([13, 18, 3, -6, -4]);
+  var satisfaction = sample([13, 18, 3, 6, -4]);
   if (this._wealth >= price) {
   this.changeWealth(-price);
   this.changeHealth(satisfaction);
