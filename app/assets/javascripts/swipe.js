@@ -1,13 +1,13 @@
 $(document).ready(function(){
-
-  $(".buddy").on("swiperight",function(){
-    $(this).addClass('rotate-left').delay(700).fadeOut(1);
+var count = 0
+  $(".accept_btn").on("click",function(){
+    $('.buddy').addClass('rotate-left').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
-    $(this).append('<div class="status like">Like!</div>');
-    window.location="http://www.facebook.com";
+    $('.buddy').append('<div class="status like">Like!</div>');
+    window.location.replace('/game');
   });
 
-  $(".buddy").on("swipeleft",function(){
+  $(".buddy").on("click",function(){
     $(this).addClass('rotate-right').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
     $(this).append('<div class="status dislike">Dislike!</div>');
