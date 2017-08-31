@@ -1,5 +1,13 @@
 $(document).ready(function() {
   var game = new Game();
+  (function(){
+    setInterval(function() {
+      game.minusHealth();
+      updateScore();
+      gameStatus();
+    }, 1000);
+  })();
+
   updateScore();
   gameStatus();
 
@@ -20,6 +28,13 @@ $(document).ready(function() {
   $('#work_button').click(function() {
     event.preventDefault();
     game.work();
+    updateScore();
+    gameStatus();
+  });
+
+  $('#gamble_button').click(function() {
+    event.preventDefault();
+    game.gamble();
     updateScore();
     gameStatus();
   });
