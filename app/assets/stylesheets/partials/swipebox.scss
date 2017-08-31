@@ -1,9 +1,9 @@
 
 #tinder-container {
   width: 500px;
+  height: 700px;
   margin: auto !important;
   display: block;
-  height: 500px;
   position: relative;
   list-style-type: none;
   -webkit-touch-callout: none;
@@ -12,16 +12,21 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  .avatar-name {
+    color: black;
+    padding: 10px 0 0 10px;
+  }
 }
 .buddy {
   display: none;
   background: #fff;
+  color: #000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   color: #fff;
-  padding: 20px;
   width: 360px;
-  height: 360px;
+  height: 440px;
   top: 50px;
   left: 50px;
   position: absolute;
