@@ -32,10 +32,8 @@ function updateScore() {
 function gameStatus() {
   if(game.win() === true){
     window.location.replace('/outcome');
-} else if(game.lose() === true){
+  } else if(game.lose() === true){
     window.location.replace('/lose');
-}
-}
-
-
+    }
+  }
 });

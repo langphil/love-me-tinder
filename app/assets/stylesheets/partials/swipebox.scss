@@ -11,11 +11,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
 
-  .avatar-name {
-    color: black;
-    padding: 10px 0 0 10px;
-  }
+.avatar-name {
+  color: black;
+  padding: 10px 0 0 10px;
 }
 
 .buddy {
@@ -60,7 +60,7 @@
   margin-left: 10px;
   background-size: auto 160% !important;
   background-position: center;
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .like {
@@ -87,10 +87,4 @@
   top: 50px;
   left: 40px;
   text-shadow: none;
-}
-
-.swipebox {
-  background-color: black;
-  width: 300px;
-  height: 300px;
 }
