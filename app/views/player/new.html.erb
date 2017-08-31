@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="col">
+    <h1>LoveMeTinder</h1>
+    <h3> Create your character </h3>
+  </div>
+    <%= form_for @player, url: {:action => :create}, :html => {:class => "form-horizontal center justify-content-center"} do |f| %>
+    <div class="form-group">
+       <%= f.label :name, class: "col control-label" %>
+      <div class="col">
+         <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+    <div class="form-group">
+       <%= f.label :age, class: "col control-label" %>
+      <div class="col">
+        <%= f.text_field :age, class: "form-control" %>
+      </div>
+    </div>
+    <div class="radio">
+      <div class= "col control-label">
+        <h6>Gender:</h6>
+      </div>
+      <div class="col">
+        <%= f.radio_button :gender, "female", :checked => true %>
+        <%= label :gender_female, "I'm a girl", :value => "female" %>
+        <%= f.radio_button :gender, "male" %>
+        <%= label :gender_male, "I'm a guy", :value => "male" %>
+        <%= f.radio_button :gender, "other" %>
+        <%= label :gender_other, "I'm just me", :value => "other" %>
+      </div>
+    </div>
+    <div class="radio">
+      <div class= "col control-label">
+        <h6>I'm interested in:</h6>
+      </div>
+      <div class="col">
+        <%= f.radio_button :interest, "male", :checked => true %>
+        <%= label :interest_male, "Male", :value => "male" %>
+        <%= f.radio_button :interest, "female" %>
+        <%= label :interest_female, "Female", :value => "female" %>
+        <%= f.radio_button :interest, "both" %>
+        <%= label :interest_both, "Both", :value => "both" %>
+      </div>
+    </div>
+    <div class="col">
+      <div class="actions">
+        <%= f.submit "Create player", class: "btn btn-default btn-primary" %>
+      </div>
+    </div>
+    <% end %>
+</div>
