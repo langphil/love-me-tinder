@@ -1,9 +1,10 @@
-var Game = function() {
+var Game = function () {
+  'use_strict'
   this._health = 20;
   this._wealth = 20;
 };
 
-sample = function(array) {
+sample = function (array) {
   return array[Math.floor ( Math.random() * array.length )]
 }
 
@@ -12,7 +13,7 @@ Game.prototype.work = function() {
   this.changeHealth(-2);
 };
 
-Game.prototype.date = function() {
+Game.prototype.date = function () {
   var satisfaction = sample([16, 6, -4, -15])
   if (this._wealth >= 10) {
     this.changeWealth(-10);
@@ -25,7 +26,7 @@ Game.prototype.date = function() {
   }
 };
 
-Game.prototype.gift = function() {
+Game.prototype.gift = function () {
   var price = sample([4, 7, 12, 16]);
   var satisfaction = sample([13, 18, 3, -6, -4]);
   if (this._wealth >= price) {
@@ -36,7 +37,7 @@ Game.prototype.gift = function() {
 }
 };
 
-Game.prototype.gamble = function() {
+Game.prototype.gamble = function () {
   var net = sample([35, -7, -12, -16]);
   if (this._wealth + net >= 0) {
     this.changeWealth(net);
@@ -46,11 +47,11 @@ Game.prototype.gamble = function() {
   }
 };
 
-Game.prototype.changeHealth = function(amount = 1) {
+Game.prototype.changeHealth = function (amount = 1) {
   this._health += amount
 }
 
-Game.prototype.changeWealth = function(amount = 1) {
+Game.prototype.changeWealth = function (amount = 1) {
   this._wealth += amount
 }
 
