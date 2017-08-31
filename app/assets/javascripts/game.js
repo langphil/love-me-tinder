@@ -33,7 +33,7 @@ function gameStatus() {
   if(game.win() === true){
     window.location.replace('/outcome');
 } else if(game.lose() === true){
-  $('#gameStatus').text("You suck!");
+    window.location.replace('/lose');
 }
 }
 

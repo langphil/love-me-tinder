@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'lose/index'
+
   get 'outcome/index'
 
   resources :game
@@ -11,6 +13,6 @@ Rails.application.routes.draw do
   resources :player
   resources :welcome
   resources :outcome
-
+  resources :lose
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
