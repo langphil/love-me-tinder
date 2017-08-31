@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+var count = 0
   $(".accept_btn").on("click",function(){
     $('.buddy').addClass('rotate-left').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
@@ -8,10 +8,8 @@ $(document).ready(function(){
   });
 
   $(".buddy").on("click",function(){
-    console.log(this)
     $(this).addClass('rotate-right').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
-    console.log(this)
     $(this).append('<div class="status dislike">Dislike!</div>');
 
     if ( $(this).is(':last-child') ) {
