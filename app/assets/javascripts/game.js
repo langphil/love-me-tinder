@@ -31,9 +31,9 @@ function updateScore() {
 
 function gameStatus() {
   if(game.win() === true){
-  $('#gameStatus').text("You are a winner!");
+    window.location.replace('/outcome');
 } else if(game.lose() === true){
-  $('#gameStatus').text("You suck!");
+    window.location.replace('/lose');
 }
 }
 
