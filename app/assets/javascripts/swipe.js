@@ -5,19 +5,7 @@ $(document).ready(function(){
       $('.buddy').find('.status').remove();
       $(this).append('<div class="status like">Like!</div>');
       window.location="http://www.facebook.com";
-      // if ( $(this).is(':last-child') ) {
-      //   $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-      //  } else {
-      //     $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-      //  }
     });
-
-
-
-
-
-
-
 
    $(".buddy").on("swipeleft",function(){
     $(this).addClass('rotate-right').delay(700).fadeOut(1);
@@ -31,5 +19,4 @@ $(document).ready(function(){
         $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
     }
   });
-
 });
