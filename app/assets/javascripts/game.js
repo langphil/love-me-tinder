@@ -2,7 +2,7 @@ $(document).ready(function() {
   var game = new Game();
   (function(){
     setInterval(function() {
-      game.minusHealth();
+      game.changeHealth(-1);
       updateScore();
       gameStatus();
     }, 1000);
