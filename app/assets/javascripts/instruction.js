@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
   $('.Start-Play').click(function() {
     event.preventDefault();
