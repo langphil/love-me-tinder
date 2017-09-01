@@ -4,7 +4,7 @@ var count = 0
     $('.buddy').addClass('rotate-left').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
     $('.buddy').append('<div class="status like">Like!</div>');
-    window.location.replace('/game');
+    window.location.replace('/instruction');
   });
 
   $(".buddy").on("click",function(){
@@ -14,7 +14,7 @@ var count = 0
 
     if ( $(this).is(':last-child') ) {
      $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-      alert('OUPS');
+      window.location.reload();
      } else {
         $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
     }
