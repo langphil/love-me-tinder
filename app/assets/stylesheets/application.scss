@@ -26,3 +26,23 @@
 * {
   font-family: 'VT323', monospace;
 }
+
+.btn {
+  position: relative;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

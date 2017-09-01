@@ -1,6 +1,6 @@
 var Game = function () {
   'use_strict'
-  this._health = 20;
+  this._health = 30;
   this._wealth = 20;
 };
 

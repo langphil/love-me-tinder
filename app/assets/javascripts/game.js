@@ -5,7 +5,7 @@ $(document).ready(function() {
       game.changeHealth(-1);
       updateScore();
       gameStatus();
-    }, 10000);
+    }, 1600);
   })();
 
   updateScore();
