@@ -5,7 +5,7 @@ $(document).ready(function() {
       game.changeHealth(-1);
       updateScore();
       gameStatus();
-    }, 2000);
+    }, 10000);
   })();
 
   updateScore();
@@ -42,6 +42,10 @@ $(document).ready(function() {
 function updateScore() {
   $('#gameHealth').text(game._health);
   $('#gameWealth').text(game._wealth);
+  var heart_width = game._health*0.3 + "vw";
+  var coin_width = game._wealth*0.3 + "vw";
+  $('#heart-bar').width(heart_width);
+  $('#wealth-bar').width(coin_width);
 }
 
 function gameStatus() {
