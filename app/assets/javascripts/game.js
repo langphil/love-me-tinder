@@ -1,8 +1,14 @@
 'use_strict'
 
 var Game = function () {
-  this._health = 20;
-  this._wealth = 20;
+  this._health = 30;
+  this._wealth = 30;
+  this.DATE_COST = 10;
+  this.DATE_SATISFACTION = sample([6, -6]);
+  this.GIFT_COST = sample([7, -7]);
+  this.GIFT_SATISFACTION = sample([4, -4]);
+  this.GAMBLNG_NET = sample([16, -16]);
+  this.GAMBLNG_DISAPPOINTMENT = 4;
 };
 
 Game.prototype.healthPoints = function() {
@@ -23,11 +29,10 @@ Game.prototype.work = function() {
 };
 
 Game.prototype.date = function () {
-  var satisfaction = sample([16, 6, -4, -15])
-  if (this._wealth >= 10) {
-    this.changeWealth(-10);
-    this.changeHealth(satisfaction);
-    if (satisfaction <= 0) {
+  if (this._wealth >= this.DATE_COST) {
+    this.changeWealth(-this.DATE_COST);
+    this.changeHealth(this.DATE_SATISFACTION);
+    if (this.DATE_SATISFACTION <= 0) {
       alert("Sorry your date went badly :(");
     }
   } else {
@@ -36,21 +41,18 @@ Game.prototype.date = function () {
 };
 
 Game.prototype.gift = function () {
-  var price = sample([4, 7, 12, 16]);
-  var satisfaction = sample([13, 18, 3, 6, -4]);
-  if (this._wealth >= price) {
-  this.changeWealth(-price);
-  this.changeHealth(satisfaction);
+  if (this._wealth >= this.GIFT_COST) {
+  this.changeWealth(-this.GIFT_COST);
+  this.changeHealth(this.GIFT_SATISFACTION);
 } else {
   alert("You can't afford a gift. Go to work!");
 }
 };
 
 Game.prototype.gamble = function () {
-  var net = sample([35, -7, -12, -16]);
-  if (this._wealth + net >= 0) {
-    this.changeWealth(net);
-    this.changeHealth(-4);
+  if (this._wealth + this.GAMBLNG_NET >= 0) {
+    this.changeWealth(this.GAMBLNG_NET);
+    this.changeHealth(-this.GAMBLNG_DISAPPOINTMENT);
   } else {
     alert("You don't have enough money to gamble. Go to work!");
   }
