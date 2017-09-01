@@ -61,33 +61,31 @@ This will start the server at localhost:3000
 
 ## Screenshots
 
-
+### Jamine Tests
+![PNG](https://i.imgur.com/XIN3Ww0.png)
+                                               
 ## LoveMeTinder Mockups
 
 ### Create your profile
 
 <p float="left">
-  <img src="http://i.imgur.com/53Uo3as.png" width="150"/>
-  <img src="http://i.imgur.com/QTSTlxh.png" width="157"/>
+  <img src="https://i.imgur.com/cCSHdZS.png" width="150"/>
+  <img src="https://i.imgur.com/fKheP3e.png" width="157"/>
+  <img src="https://i.imgur.com/VTxOvyG.png" width="157"/>
 </p>
 
 ### Find a match
 
 <p float="left">
-  <img src="http://i.imgur.com/obxHHXf.png" width="150"/>
-  <img src="http://i.imgur.com/VnCODuy.png" width="150"/>
-</p>
-
-### Chat
-<p float="left">
-  <img src="http://i.imgur.com/5z9UoJ4.png" width="198"/>
+  <img src="https://i.imgur.com/pWF4C5y.png" width="198"/>
 </p>
 
 ### Play
 <p float="left">
-  <img src="http://i.imgur.com/87yPepM.png" width="144"/>
-  <img src="http://i.imgur.com/leOdYXN.png" width="155"/>
-  <img src="http://i.imgur.com/LRIGCGd.png" width="155"/>
+  <img src="https://i.imgur.com/Nsug8cn.png" width="144"/>
+  <img src="https://i.imgur.com/55tjlJN.png" width="144"/>
+  <img src="https://i.imgur.com/uqHPHcV.png" width="155"/>
+  <img src="hhttps://i.imgur.com/X4pZAca.png" width="155"/>
 </p>
 
 
