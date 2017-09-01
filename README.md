@@ -1,24 +1,65 @@
 # Love me Tinder
 A dating / relationship compatibility game / simulator.
 
-## Installation
-* git clone git@github.com:langphil/love-me-tinder.git
-* bundle install
-* bin/rails db:create
-* bin/rails db:migrate
-* bin/rails db:seed
-* rails s
-* http://localhost/3000
+### About
+Our team of 6 programmers spent a four days making this dating game as part of our training at Makers.
+
+## Visit our Heroku site
+
+https://love-me-tinder.herokuapp.com/
+
+## Or run locally
+View the repository [here](https://github.com/makersacademy/acebook-remote-july-2017) on GitHub
+
+Clone the repo. Then:
+
+```bash
+bundle install
+bin/rails db:create
+bin/rails db:migrate
+bin/rails db:seed
+```
+#### To run the tests
+```bash
+bundle exec rspec
+```
+
+### To view in browser
+```bash
+bin/rails server
+```
+This will start the server at localhost:3000
 
 ## Other
 * rspec (runs tests)
 * rubocop (code quality)
 
+---
+## Processes
+* XP (Extreme Programming)
+* Agile
+* Pair programming
+* TDD
+* Remote collaboration
+
+---
+## Technologies used
+* [Ruby](https://www.ruby-lang.org/en/) as the main back-end language
+* [Rails](http://rubyonrails.org/) for the framework
+* [Travis CI](https://travis-ci.org/)
+* [PostgreSQL](https://www.postgresql.org/) for handling databases
+* [GitHub](https://github.com/makersacademy/acebook-remote-july-2017) for storing our work
+* [Trello](https://trello.com/) for tracking and organising workflow
+* [Heroku](https://acebook-remote-july.herokuapp.com/
+) for hosting our website
+* CSS and Bootstrap to make it look pretty
+* Git for version managing
+
+## Styling and Imagery
+* Bootstrap for styling and layout (please see getbootstrap.com/docs/4.0/layout/grid/)
+
 ## Screenshots
 
-## Heroku
-
-https://love-me-tinder.herokuapp.com/
 
 ## LoveMeTinder Mockups
 
