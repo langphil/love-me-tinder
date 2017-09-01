@@ -9,12 +9,18 @@
 .icon-container {
   display: inline-block;
 }
+.icon-container p {
+  text-align: center;
+}
 .icon {
   width: 50px;
   margin-left: 1.2em;
 }
 
-.bar {
+#heart-bar {
   background-color: red;
+}
+
+.bar {
   width: 30vw;
 }

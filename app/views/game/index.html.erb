@@ -1,17 +1,22 @@
 <div class="row justify-content-md-center">
   <div class="col-md-auto" style="text-align: center;">
+
     <div class="game-box">
       <div class="head-box">
         <strong>Health</strong>
-        <%= image_tag 'heart_bar.png', class: 'bar' %>
+          <div id="heart-bar">
+            <%= image_tag 'heart_bar.png', class: 'bar' %>
+          </div>
       </div>
       <div class="">
         <strong>Wallet</strong>
         <%= image_tag 'coin-bar.png', class: 'bar' %>
       </div>
+
       <p id='gameStatus'></p>
       Health: <p id="gameHealth">10</p>
       Wealth: <p id="gameWealth">10</p>
+
       <div class="icon-container" id="icon-container">
         <a href="#" id="gift_button"><%= image_tag 'action_gift.png', class: 'icon' %></a>
         <p>Gift</p>
@@ -29,5 +34,6 @@
         <p>Gamble</p>
       </div>
     </div>
+
   </div>
 </div>
