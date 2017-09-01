@@ -4,7 +4,7 @@ var count = 0
     $('.buddy').addClass('rotate-left').delay(700).fadeOut(1);
     $('.buddy').find('.status').remove();
     $('.buddy').append('<div class="status like">Like!</div>');
-    window.location.replace('/game');
+    window.location.replace('/instruction');
   });
 
   $(".buddy").on("click",function(){
