@@ -42,8 +42,10 @@ $(document).ready(function() {
 function updateScore() {
   $('#gameHealth').text(game._health);
   $('#gameWealth').text(game._wealth);
-  var width = game._health*0.3 + "vw";
-  $('#heart-bar').width(width);
+  var heart_width = game._health*0.3 + "vw";
+  var coin_width = game._wealth*0.3 + "vw";
+  $('#heart-bar').width(heart_width);
+  $('#wealth-bar').width(coin_width);
 }
 
 function gameStatus() {

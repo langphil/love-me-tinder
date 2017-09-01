@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .game-box {
+  width: 40vw;
   border: 1px #E1E1E1 solid;
   border-radius: 5px;
 }
@@ -19,6 +20,10 @@
 
 #heart-bar {
   background-color: red;
+}
+
+#wealth-bar {
+  background-color: yellow;
 }
 
 .bar {
