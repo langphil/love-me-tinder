@@ -14,3 +14,15 @@
  *= require_self
  */
 @import "bootstrap";
+
+.game-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  border: 2px #E1E1E1 solid;
+  padding: 10px;
+}
+
+* {
+  font-family: 'VT323', monospace;
+}

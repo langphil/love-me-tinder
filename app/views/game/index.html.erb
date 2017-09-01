@@ -1,8 +1,44 @@
-<h1>Game</h1>
-<p id='gameStatus'></p>
-Health: <p id="gameHealth">10</p>
-Wealth: <p id="gameWealth">10</p>
-<button id="gift_button">gift</button>
-<button id="date_button">date</button>
-<button id="work_button">work</button>
-<button id="gamble_button">gamble</button>
+<div class="row justify-content-md-center">
+  <div class="col">
+  <h1>Love Me Tinder</h1>
+    <div class="health-panel">
+      <div class="health-box">
+        <h3>Health</h3>
+          <div id="heart-bar">
+            <%= image_tag 'heart_bar.png', class: 'bar' %>
+          </div>
+      </div>
+
+      <div class="wealth-box">
+        <h3>Wallet</h3>
+        <div id="wealth-bar">
+          <%= image_tag 'coin-bar.png', class: 'bar' %>
+        </div>
+      </div>
+    </div>
+
+  <div class="date-panel">
+    <%= image_tag 'http://i.imgur.com/kvngmd9.png', id: 'profile-pic', class: 'picture' %>
+    <%= image_tag 'heart.png', id: 'heart', class: 'picture' %>
+  </div>
+
+  <div class="control-panel">
+      <div class="icon-container" id="icon-container">
+        <a href="#" id="gift_button"><%= image_tag 'action_gift.png', class: 'icon' %></a>
+        <p>Gift</p>
+      </div>
+      <div class="icon-container">
+        <a href="#" id="date_button"><%= image_tag 'action_date.png', class: 'icon' %></a>
+        <p>Date</p>
+      </div>
+      <div class="icon-container">
+        <a href="#" id="work_button"><%= image_tag 'action_work.png', class: 'icon' %></a>
+        <p>Work</p>
+      </div>
+      <div class="icon-container">
+        <a href="#" id="gamble_button"><%= image_tag 'action_gamble.png', class: 'icon' %></a>
+        <p>Gamble</p>
+      </div>
+  </div>
+
+</div>
