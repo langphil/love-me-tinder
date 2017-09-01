@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'instruction/index'
+
   get 'lose/index'
 
   get 'outcome/index'
@@ -14,5 +16,6 @@ Rails.application.routes.draw do
   resources :welcome
   resources :outcome
   resources :lose
+  resources :instruction
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
