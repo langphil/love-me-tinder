@@ -16,6 +16,5 @@ def profile_set_up(name: "Eoin",
   fill_in "Name", with: name
   fill_in "Age", with: age
   choose(gender)
-  choose(interest)
   click_button "Create player"
 end
