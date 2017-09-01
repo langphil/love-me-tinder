@@ -70,8 +70,8 @@ This will start the server at localhost:3000
 
 <p float="left">
   <img src="https://i.imgur.com/cCSHdZS.png" width="150"/>
-  <img src="https://i.imgur.com/fKheP3e.png" width="157"/>
-  <img src="https://i.imgur.com/VTxOvyG.png" width="157"/>
+  <img src="https://i.imgur.com/fKheP3e.png" width="150"/>
+  <img src="https://i.imgur.com/VTxOvyG.png" width="150"/>
 </p>
 
 ### Find a match
