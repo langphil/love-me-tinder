@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/langphil/love-me-tinder.svg?branch=master)](https://travis-ci.org/langphil/love-me-tinder)[![Code Climate](https://codeclimate.com/github/langphil/love-me-tinder/badges/gpa.svg)](https://codeclimate.com/github/rails/rails)[![Test Coverage](https://codeclimate.com/github/langphil/love-me-tinder/badges/coverage.svg)](https://codeclimate.com/github/langphil/love-me-tinder/coverage)
+
 # Love me Tinder
 A dating / relationship compatibility game / simulator.
 
