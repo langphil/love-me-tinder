@@ -31,7 +31,6 @@ bin/rails server
 This will start the server at localhost:3000
 
 ## Other
-* rspec (runs tests)
 * rubocop (code quality)
 
 ---
