@@ -9,7 +9,7 @@ class PlayerController < ApplicationController
 
   def create
     @player = Player.create(player_params)
-    redirect_to '/player'
+    redirect_to player_url(@player)
   end
 
   def show
