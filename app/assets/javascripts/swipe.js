@@ -14,7 +14,7 @@ var count = 0
 
     if ( $(this).is(':last-child') ) {
      $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-      alert('OUPS');
+      window.location.reload();
      } else {
         $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
     }

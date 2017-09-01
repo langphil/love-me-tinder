@@ -29,19 +29,6 @@
         <%= label :gender_other, "I'm just me", :value => "other" %>
       </div>
     </div>
-    <div class="radio">
-      <div class= "col control-label">
-        <h6>I'm interested in:</h6>
-      </div>
-      <div class="col">
-        <%= f.radio_button :interest, "male", :checked => true %>
-        <%= label :interest_male, "Male", :value => "male" %>
-        <%= f.radio_button :interest, "female" %>
-        <%= label :interest_female, "Female", :value => "female" %>
-        <%= f.radio_button :interest, "both" %>
-        <%= label :interest_both, "Both", :value => "both" %>
-      </div>
-    </div>
     <div class="col">
       <div class="actions">
         <%= f.submit "Create player", class: "btn btn-default btn-primary" %>
